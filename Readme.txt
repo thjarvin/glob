@@ -1,7 +1,7 @@
 This a Maven/Java application that matches patterns
 
 Requirements
-- Maven and Java should be installed in your computer :)
+- Maven and Java should be installed on your computer :)
 
 Instructions how to use:
 1. Clone this Git project to your computer
