@@ -17,6 +17,10 @@ public class PatternMatchesExactlyOne extends Pattern {
 			return false;
 		}
 		
+		if (someString.length() < patternString.length()) {
+			return false;
+		}
+		
 		return Pattern.getPattern(getEndOfPattern()).matches(getEndOfString(someString));
 	}
 }

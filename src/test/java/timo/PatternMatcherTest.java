@@ -148,6 +148,11 @@ public class PatternMatcherTest {
 		runTrueTest("tiber", "ti*ber");
 	}
 	
+	@Test
+	public void testMoiDoesNotMatchMoiQuestionMark() {
+		runFalseTest("moi", "moi?");
+	}
+	
 	private void runTrueTest(String someString, String pattern) {
 		assertTrue(
 			getShouldMatchText(someString, pattern), 

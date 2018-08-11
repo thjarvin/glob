@@ -33,7 +33,7 @@ public class PatternMatcher {
 		System.out.println("\\ escapes special characters (i.e. ?, + or *)");
 		
 		Scanner reader = new Scanner(System.in);
-		System.out.println("\nPlease enter a pattern: ");
+		System.out.println("\nPlease enter a pattern (without spaces please): ");
 		String pattern = reader.next();
 		PatternMatcher patternMatcher = new PatternMatcher(pattern);
 		
@@ -42,7 +42,7 @@ public class PatternMatcher {
 		List<String> errorStrings = new ArrayList<>();
 		
 		while (true) {
-			System.out.println("\nPlease enter a string or type 'quit' to exit the program: ");
+			System.out.println("\nPlease enter a string (without spaces please) or type 'quit' to exit the program: ");
 			String someString = reader.next();
 			
 			if ("quit".equals(someString)) {
